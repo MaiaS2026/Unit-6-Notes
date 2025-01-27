@@ -93,8 +93,22 @@ public class Main {
          bestClass[i] = bestClass[i] + "yay";
          System.out.print(bestClass[i] + " ");
       }
+
+      // ENHANCED FOR LOOPS ("For-Each")
+      // Shortcut to iterate through EACH item
+      // in a collection (from start -> end)
+      // for (type variable : arrayname)
+      System.out.println("FOR-EACH-LOOP: ");
+      // "for each student in the class array"
+      for (String student : bestClass) {
+         // student represents CURRENT ITEM
+         System.out.print(student + " "); 
+      }
+      // LIMITATIONS:
+      // can't mondify values when using for-each
+      // becayse we don't keep track of INDEX
+      // For-each loops is good for "visiting every item" in order. Otherwise, use a standard loop!!!
   
-      
    }
 }
 
